@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://indelible-8tg.pages.dev/ -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Indelible Ads — Automatiza Sin Perder Tu Voz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Construimos sistemas de WhatsApp y chatbots para negocios que quieren responder más rápido y cerrar más leads — sin sonar como un robot. Automatización conversacional para restaurantes, clínicas y empresas B2B en México, Canadá y USA.">
+<link rel="canonical" href="https://indelibleads.com/es/">
+<!-- hreflang SEO -->
+<link rel="alternate" hreflang="en" href="https://indelibleads.com/">
+<link rel="alternate" hreflang="es" href="https://indelibleads.com/es/">
+<link rel="alternate" hreflang="fr" href="https://indelibleads.com/fr/">
+<link rel="alternate" hreflang="x-default" href="https://indelibleads.com/">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://indelibleads.com/es/">
+<meta property="og:title" content="Indelible Ads — Automatiza Sin Perder Tu Voz">
+<meta property="og:description" content="Construimos sistemas de WhatsApp y chatbots para negocios que quieren responder más rápido y cerrar más leads — sin sonar como un robot.">
+<meta property="og:image" content="https://indelibleads.com/og-image.png">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="Indelible Ads">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Indelible Ads — Automatiza Sin Perder Tu Voz">
+<meta name="twitter:description" content="Sistemas de WhatsApp y chatbots que responden al instante y suenan como tu equipo.">
+<meta name="twitter:image" content="https://indelibleads.com/og-image.png">
+<!-- JSON-LD Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Indelible Ads",
+  "description": "Agencia especializada en sistemas conversacionales de WhatsApp y chatbots para negocios en México, Canadá y USA.",
+  "url": "https://indelibleads.com/es/",
+  "email": "info@indelibleads.com",
+  "areaServed": ["MX", "CA", "US"],
+  "serviceType": ["WhatsApp Automation", "Chatbot Development", "Conversational Marketing"],
+  "inLanguage": "es",
+  "sameAs": ["https://wa.me/16470000000"]
+}
+</script>
+<script>
+(function(){
+  // Spanish page - set lang preference
+localStorage.setItem("indelible_lang","es");
+})();
+</script>
+<link rel="stylesheet" href="./Indelible Ads — Automatiza Sin Perder Tu Voz_files/css2">
+<style>
+/* ── RESET ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --ink:#0B1210;--ink2:#0E1614;--green:#0F6E56;--mint:#7BC1A9;
+  --mint-dim:rgba(123,193,169,0.12);--mint-glow:rgba(123,193,169,0.18);
+  --wa:#25D366;--wa-dim:rgba(37,211,102,0.12);--wa-glow:rgba(37,211,102,0.25);
+  --white:#fff;--muted:rgba(255,255,255,0.5);
+  --border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.12);
+  --font:"Inter Tight",system-ui,sans-serif;--mono:"JetBrains Mono",monospace;
+  --radius:18px;--ease:cubic-bezier(.16,1,.3,1);
+}
+html{scroll-behavior:smooth;}
+body{background:var(--ink);color:var(--white);font-family:var(--font);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none;}
+button{font-family:var(--font);cursor:pointer;border:none;}
+section{position:relative;}
+::selection{background:var(--mint);color:var(--ink);}
+
+
+/* ── LANG SWITCHER ── */
+.lang-switcher{display:flex;align-items:center;gap:2px;font-family:var(--mono);font-size:11px;letter-spacing:.08em;}
+.lang-btn{background:none;border:none;color:rgba(255,255,255,.3);cursor:pointer;padding:4px 6px;border-radius:5px;font-family:var(--mono);font-size:11px;letter-spacing:.08em;transition:color .15s;line-height:1;}
+.lang-btn:hover{color:rgba(255,255,255,.7);}
+.lang-btn.active{color:var(--mint);}
+.lang-sep{color:rgba(255,255,255,.15);font-size:10px;user-select:none;}
+
+/* ── SCROLL REVEAL ── */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease);}
+.reveal.visible{opacity:1;transform:none;}
+.reveal-d1{transition-delay:.08s;}
+.reveal-d2{transition-delay:.16s;}
+.reveal-d3{transition-delay:.24s;}
+.reveal-d4{transition-delay:.32s;}
+
+/* ── NAV ── */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:16px 48px;
+  background:rgba(11,18,16,0.75);
+  backdrop-filter:blur(28px);
+  border-bottom:1px solid var(--border);
+  transition:padding .3s var(--ease),background .3s;
+}
+.nav.scrolled{padding:12px 48px;background:rgba(11,18,16,0.92);}
+.nav-logo{display:flex;align-items:center;gap:5px;font-size:16px;letter-spacing:-0.02em;}
+.nav-logo b{font-weight:800;}
+.nav-logo span{font-weight:400;letter-spacing:0.06em;}
+.nav-right{display:flex;align-items:center;gap:10px;}
+
+/* Buttons */
+.btn-wa-nav{
+  display:flex;align-items:center;gap:7px;
+  background:var(--wa-dim);color:var(--wa);
+  border:1px solid rgba(37,211,102,0.2);
+  padding:8px 16px;border-radius:999px;
+  font-size:13px;font-weight:600;
+  transition:all .2s var(--ease);
+}
+.btn-wa-nav:hover{background:rgba(37,211,102,0.2);border-color:rgba(37,211,102,0.4);box-shadow:0 0 20px rgba(37,211,102,0.15);}
+.btn-nav-cta{
+  background:var(--mint);color:var(--ink);
+  padding:8px 18px;border-radius:999px;
+  font-size:13px;font-weight:700;
+  transition:all .2s var(--ease);
+}
+.btn-nav-cta:hover{opacity:.88;transform:translateY(-1px);}
+
+.btn-primary{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--white);color:var(--ink);
+  padding:15px 28px;border-radius:999px;
+  font-size:15px;font-weight:700;
+  transition:all .2s var(--ease);cursor:pointer;border:none;
+}
+.btn-primary:hover{opacity:.92;transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.3);}
+
+.btn-wa-big{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--wa-dim);color:var(--wa);
+  border:1px solid rgba(37,211,102,0.25);
+  padding:15px 28px;border-radius:999px;
+  font-size:15px;font-weight:600;
+  transition:all .25s var(--ease);cursor:pointer;
+  position:relative;overflow:hidden;
+}
+.btn-wa-big::after{
+  content:'';position:absolute;inset:0;border-radius:999px;
+  background:radial-gradient(circle at center,rgba(37,211,102,0.15),transparent 70%);
+  opacity:0;transition:opacity .25s;
+}
+.btn-wa-big:hover{background:rgba(37,211,102,0.18);border-color:rgba(37,211,102,0.5);transform:translateY(-2px);box-shadow:0 0 32px rgba(37,211,102,0.2);}
+.btn-wa-big:hover::after{opacity:1;}
+
+.btn-mint{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--mint);color:var(--ink);
+  padding:15px 28px;border-radius:999px;
+  font-size:15px;font-weight:700;
+  transition:all .2s var(--ease);cursor:pointer;border:none;
+}
+.btn-mint:hover{opacity:.9;transform:translateY(-1px);box-shadow:0 8px 24px rgba(123,193,169,0.25);}
+
+.label{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:var(--mono);font-size:11px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--mint);
+}
+.label::before{content:'';display:block;width:16px;height:1px;background:var(--mint);}
+
+/* ── HERO ── */
+.hero{
+  min-height:100vh;display:flex;flex-direction:column;
+  justify-content:center;padding:120px 48px 80px;overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(ellipse 70% 55% at 65% 45%,rgba(15,110,86,.14) 0%,transparent 70%);
+}
+.hero-glow{
+  position:absolute;width:600px;height:600px;
+  right:-100px;top:50%;transform:translateY(-50%);
+  background:radial-gradient(circle,rgba(15,110,86,.08) 0%,transparent 65%);
+  pointer-events:none;
+}
+.hero-grid{
+  position:absolute;inset:0;pointer-events:none;opacity:.025;
+  background-image:linear-gradient(var(--border2) 1px,transparent 1px),linear-gradient(90deg,var(--border2) 1px,transparent 1px);
+  background-size:64px 64px;
+}
+.hero-inner{position:relative;z-index:2;max-width:1200px;margin:0 auto;width:100%;}
+.hero-label{margin-bottom:28px;animation:fadeUp .6s var(--ease) both;}
+.hero-h1{
+  font-size:clamp(52px,7.5vw,112px);font-weight:800;
+  letter-spacing:-.04em;line-height:.88;
+  margin-bottom:28px;max-width:16ch;
+  animation:fadeUp .6s .08s var(--ease) both;
+}
+.hero-h1 em{font-style:italic;font-weight:300;color:var(--mint);}
+.hero-sub{
+  font-size:clamp(16px,1.8vw,19px);line-height:1.7;
+  color:rgba(255,255,255,.6);max-width:42ch;margin-bottom:40px;
+  animation:fadeUp .6s .16s var(--ease) both;
+}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:56px;animation:fadeUp .6s .22s var(--ease) both;}
+
+/* Social proof strip */
+.hero-proof{
+  display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+  animation:fadeUp .6s .3s var(--ease) both;
+}
+.proof-item{
+  display:flex;align-items:center;gap:8px;
+  font-size:12px;color:rgba(255,255,255,.38);
+  font-family:var(--mono);letter-spacing:.06em;
+}
+.proof-dot{width:4px;height:4px;border-radius:50%;background:var(--mint);opacity:.6;}
+.proof-divider{width:1px;height:16px;background:var(--border2);}
+
+/* Hero chat visual */
+.hero-visual{
+  position:absolute;right:0;top:50%;transform:translateY(-50%);
+  width:400px;display:flex;flex-direction:column;gap:10px;
+  animation:fadeUp .7s .35s var(--ease) both;
+}
+.chat-card{
+  background:rgba(13,22,19,0.9);
+  border:1px solid var(--border2);
+  border-radius:var(--radius);padding:20px;
+  backdrop-filter:blur(20px);
+  box-shadow:0 24px 64px rgba(0,0,0,0.4),0 0 0 1px rgba(255,255,255,0.04);
+}
+.chat-header{
+  display:flex;align-items:center;gap:10px;
+  margin-bottom:16px;padding-bottom:12px;
+  border-bottom:1px solid var(--border);
+}
+.chat-avatar{
+  width:32px;height:32px;border-radius:8px;
+  background:linear-gradient(135deg,#0F6E56,#1a9070);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.chat-name{font-size:13px;font-weight:600;letter-spacing:-.01em;}
+.chat-badge{
+  font-family:var(--mono);font-size:9px;letter-spacing:.1em;
+  color:var(--wa);display:flex;align-items:center;gap:4px;margin-top:1px;
+}
+.chat-badge::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--wa);flex-shrink:0;animation:pulse 2s infinite;}
+.chat-msgs{display:flex;flex-direction:column;gap:6px;}
+.msg{padding:9px 13px;border-radius:11px;font-size:12.5px;line-height:1.45;max-width:86%;}
+.msg.in{background:rgba(255,255,255,.07);align-self:flex-start;color:rgba(255,255,255,.82);}
+.msg.out{
+  background:linear-gradient(135deg,rgba(15,110,86,.55),rgba(15,110,86,.35));
+  border:1px solid rgba(123,193,169,.15);align-self:flex-end;
+}
+.msg-time{font-family:var(--mono);font-size:9px;color:rgba(255,255,255,.28);margin-top:2px;padding:0 4px;}
+.msg-time.right{text-align:right;}
+.chat-system{
+  margin-top:10px;padding:9px 13px;
+  background:rgba(123,193,169,.07);
+  border:1px solid rgba(123,193,169,.14);
+  border-radius:10px;
+  font-size:11px;color:var(--mint);
+  font-family:var(--mono);letter-spacing:.04em;line-height:1.5;
+}
+
+/* Stats bar */
+.stats-bar{
+  background:rgba(13,22,19,0.8);
+  border:1px solid var(--border);
+  border-radius:14px;padding:14px 18px;
+  display:grid;grid-template-columns:repeat(3,1fr);
+  text-align:center;
+  box-shadow:0 8px 32px rgba(0,0,0,0.3);
+}
+.stat-item:not(:last-child){border-right:1px solid var(--border);}
+.stat-n{font-size:20px;font-weight:800;color:var(--mint);letter-spacing:-.02em;}
+.stat-l{font-size:10px;color:rgba(255,255,255,.38);font-family:var(--mono);letter-spacing:.08em;text-transform:uppercase;margin-top:2px;}
+
+/* ── PROBLEM ── */
+.problema{padding:112px 48px;border-top:1px solid var(--border);}
+.problema-inner{max-width:1200px;margin:0 auto;}
+.problema-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;margin-top:52px;}
+.problema-h2{font-size:clamp(32px,4vw,56px);font-weight:800;letter-spacing:-.03em;line-height:.95;margin-bottom:20px;}
+.problema-sub{font-size:16px;line-height:1.7;color:rgba(255,255,255,.55);margin-bottom:36px;}
+.pain-list{display:flex;flex-direction:column;gap:10px;}
+.pain-item{
+  display:flex;align-items:flex-start;gap:13px;
+  padding:14px 18px;
+  background:rgba(255,255,255,.02);
+  border:1px solid var(--border);
+  border-radius:12px;
+  font-size:13.5px;line-height:1.55;color:rgba(255,255,255,.65);
+  transition:border-color .25s,background .25s,transform .25s var(--ease);
+}
+.pain-item:hover{border-color:rgba(255,255,255,.14);background:rgba(255,255,255,.035);transform:translateX(4px);}
+.pain-icon{font-size:16px;flex-shrink:0;margin-top:2px;}
+
+/* Before/after */
+.ba-card{
+  background:rgba(13,22,19,0.7);
+  border:1px solid var(--border);
+  border-radius:var(--radius);overflow:hidden;
+  box-shadow:0 16px 48px rgba(0,0,0,0.3);
+}
+.ba-label{
+  padding:11px 18px;font-family:var(--mono);
+  font-size:9px;letter-spacing:.18em;text-transform:uppercase;
+  border-bottom:1px solid var(--border);
+  display:flex;align-items:center;gap:7px;
+}
+.ba-label.before{color:rgba(255,100,100,.55);}
+.ba-label.after{color:var(--mint);}
+.ba-label::before{content:'';width:6px;height:6px;border-radius:50%;background:currentColor;flex-shrink:0;}
+.ba-msg{padding:18px;font-size:13.5px;line-height:1.65;}
+.ba-msg.before{color:rgba(255,255,255,.3);font-style:italic;}
+.ba-msg.after{color:rgba(255,255,255,.88);}
+.ba-divider{height:1px;background:var(--border);}
+.ba-note{
+  padding:14px 18px;
+  background:var(--mint-dim);
+  font-size:12.5px;line-height:1.55;color:rgba(255,255,255,.65);
+}
+.ba-note strong{color:var(--white);}
+
+/* ── SOLUTION ── */
+.solucion{padding:112px 48px;background:rgba(15,110,86,.025);border-top:1px solid var(--border);}
+.solucion-inner{max-width:1200px;margin:0 auto;}
+.solucion-header{text-align:center;margin-bottom:64px;}
+.solucion-h2{font-size:clamp(32px,4vw,56px);font-weight:800;letter-spacing:-.03em;line-height:.95;margin-bottom:16px;margin-top:14px;}
+.solucion-sub{font-size:16px;color:rgba(255,255,255,.5);max-width:42ch;margin:0 auto;}
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.serv-card{
+  background:rgba(255,255,255,.025);
+  border:1px solid var(--border);
+  border-radius:var(--radius);padding:28px;
+  transition:border-color .25s var(--ease),background .25s,transform .25s var(--ease),box-shadow .25s;
+  position:relative;overflow:hidden;
+}
+.serv-card::before{
+  content:'';position:absolute;inset:0;border-radius:var(--radius);
+  background:radial-gradient(circle at top left,var(--mint-dim),transparent 60%);
+  opacity:0;transition:opacity .3s;
+}
+.serv-card:hover{border-color:rgba(123,193,169,.28);background:rgba(123,193,169,.035);transform:translateY(-3px);box-shadow:0 16px 40px rgba(0,0,0,0.2);}
+.serv-card:hover::before{opacity:1;}
+.serv-icon{width:42px;height:42px;border-radius:10px;background:var(--mint-dim);border:1px solid rgba(123,193,169,.18);display:flex;align-items:center;justify-content:center;margin-bottom:18px;font-size:19px;position:relative;z-index:1;}
+.serv-title{font-size:17px;font-weight:700;letter-spacing:-.02em;margin-bottom:9px;position:relative;z-index:1;}
+.serv-desc{font-size:13.5px;line-height:1.65;color:rgba(255,255,255,.48);position:relative;z-index:1;}
+.serv-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:14px;position:relative;z-index:1;}
+.serv-tag{background:rgba(255,255,255,.05);color:rgba(255,255,255,.45);padding:3px 9px;border-radius:999px;font-size:10px;font-family:var(--mono);letter-spacing:.06em;}
+
+/* Dashboard */
+.dashboard{
+  margin-top:48px;
+  background:rgba(13,22,19,0.8);
+  border:1px solid var(--border);
+  border-radius:20px;overflow:hidden;
+  box-shadow:0 24px 64px rgba(0,0,0,0.35);
+}
+.dash-topbar{
+  padding:12px 18px;border-bottom:1px solid var(--border);
+  display:flex;align-items:center;gap:7px;
+}
+.dash-dot{width:9px;height:9px;border-radius:50%;}
+.dash-title{font-family:var(--mono);font-size:10px;color:rgba(255,255,255,.28);letter-spacing:.14em;margin-left:6px;text-transform:uppercase;}
+.dash-body{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;border-bottom:1px solid var(--border);}
+.dash-metric{padding:22px 26px;border-right:1px solid var(--border);}.dash-metric:last-child{border-right:none;}
+.dash-metric-n{font-size:30px;font-weight:800;color:var(--mint);letter-spacing:-.02em;}
+.dash-metric-l{font-size:11px;color:var(--muted);font-family:var(--mono);letter-spacing:.08em;text-transform:uppercase;margin-top:3px;}
+.dash-metric-d{font-size:11px;color:rgba(123,193,169,.65);margin-top:5px;font-family:var(--mono);}
+.dash-footer{padding:14px 26px;display:flex;gap:16px;flex-wrap:wrap;}
+.dash-chip{background:rgba(123,193,169,.09);color:rgba(123,193,169,.8);padding:4px 11px;border-radius:999px;font-size:10.5px;font-family:var(--mono);letter-spacing:.07em;}
+
+/* ── HOW IT WORKS ── */
+.como{padding:112px 48px;border-top:1px solid var(--border);}
+.como-inner{max-width:1200px;margin:0 auto;}
+.como-header{text-align:center;margin-bottom:72px;}
+.como-h2{font-size:clamp(32px,4vw,56px);font-weight:800;letter-spacing:-.03em;line-height:.95;margin-bottom:16px;margin-top:14px;}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;position:relative;}
+.steps::before{
+  content:'';position:absolute;top:27px;left:16.7%;right:16.7%;
+  height:1px;background:linear-gradient(90deg,transparent,var(--border2) 20%,var(--border2) 80%,transparent);
+}
+.step{padding:0 40px 0 0;}.step:last-child{padding-right:0;}
+.step-num{
+  width:54px;height:54px;border-radius:13px;
+  background:var(--mint-dim);border:1px solid rgba(123,193,169,.22);
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;font-weight:800;color:var(--mint);
+  margin-bottom:22px;font-family:var(--mono);
+  transition:background .2s,box-shadow .2s;
+}
+.step:hover .step-num{background:rgba(123,193,169,.2);box-shadow:0 0 24px rgba(123,193,169,.15);}
+.step-title{font-size:21px;font-weight:700;letter-spacing:-.02em;margin-bottom:10px;}
+.step-desc{font-size:14px;line-height:1.65;color:rgba(255,255,255,.5);}
+.step-detail{margin-top:14px;display:flex;flex-direction:column;gap:7px;}
+.step-item{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.45);}
+.step-item::before{content:'✓';color:var(--mint);font-size:11px;font-weight:700;flex-shrink:0;}
+
+/* ── RESULTS ── */
+.resultados{padding:112px 48px;background:rgba(255,255,255,.012);border-top:1px solid var(--border);}
+.resultados-inner{max-width:1200px;margin:0 auto;}
+.resultados-header{margin-bottom:56px;}
+.resultados-h2{font-size:clamp(32px,4vw,56px);font-weight:800;letter-spacing:-.03em;line-height:.95;margin-bottom:14px;margin-top:14px;}
+.resultados-sub{font-size:16px;color:rgba(255,255,255,.45);max-width:44ch;}
+.cases-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.case-card{
+  background:rgba(13,22,19,0.6);
+  border:1px solid var(--border);
+  border-radius:var(--radius);overflow:hidden;
+  transition:border-color .25s,transform .25s var(--ease),box-shadow .25s;
+}
+.case-card:hover{border-color:rgba(123,193,169,.22);transform:translateY(-4px);box-shadow:0 20px 48px rgba(0,0,0,0.25);}
+.case-top{padding:24px 24px 18px;}
+.case-sector{font-family:var(--mono);font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--mint);margin-bottom:8px;}
+.case-client{font-size:21px;font-weight:800;letter-spacing:-.02em;margin-bottom:5px;}
+.case-quote{font-size:12.5px;line-height:1.6;color:rgba(255,255,255,.4);font-style:italic;padding-bottom:18px;border-bottom:1px solid var(--border);}
+.case-problem{padding:14px 24px;border-bottom:1px solid var(--border);}
+.case-problem-label{font-family:var(--mono);font-size:8.5px;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,100,100,.5);margin-bottom:5px;}
+.case-problem-text{font-size:12.5px;line-height:1.55;color:rgba(255,255,255,.45);}
+.case-result{padding:14px 24px;border-bottom:1px solid var(--border);}
+.case-result-label{font-family:var(--mono);font-size:8.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--mint);margin-bottom:5px;}
+.case-result-text{font-size:12.5px;line-height:1.55;color:rgba(255,255,255,.65);}
+.case-stats{padding:18px 24px;display:flex;gap:18px;}
+.case-stat-n{font-size:22px;font-weight:800;color:var(--mint);letter-spacing:-.02em;}
+.case-stat-l{font-size:9.5px;color:var(--muted);font-family:var(--mono);letter-spacing:.09em;text-transform:uppercase;margin-top:2px;}
+
+/* ── CTA FINAL ── */
+.cta-final{padding:120px 48px;border-top:1px solid var(--border);position:relative;overflow:hidden;}
+.cta-bg{
+  position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(ellipse 70% 90% at 50% 110%,rgba(15,110,86,.16) 0%,transparent 65%);
+}
+.cta-inner{max-width:1100px;margin:0 auto;position:relative;z-index:2;}
+.cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;}
+.cta-h2{font-size:clamp(36px,5vw,68px);font-weight:800;letter-spacing:-.04em;line-height:.9;margin-bottom:18px;margin-top:14px;}
+.cta-h2 em{font-style:italic;font-weight:300;color:var(--mint);}
+.cta-sub{font-size:16px;line-height:1.65;color:rgba(255,255,255,.5);margin-bottom:36px;}
+
+/* CTA options */
+.cta-options{display:flex;flex-direction:column;gap:10px;}
+.cta-option{
+  display:flex;align-items:center;gap:14px;
+  padding:15px 18px;
+  background:rgba(255,255,255,.03);
+  border:1px solid var(--border);
+  border-radius:14px;cursor:pointer;
+  transition:all .2s var(--ease);text-align:left;width:100%;
+}
+.cta-option:hover{border-color:rgba(123,193,169,.25);background:rgba(123,193,169,.05);transform:translateX(3px);}
+.cta-option.wa-option{border-color:rgba(37,211,102,.18);background:rgba(37,211,102,.05);}
+.cta-option.wa-option:hover{border-color:rgba(37,211,102,.4);background:rgba(37,211,102,.1);box-shadow:0 0 28px rgba(37,211,102,.1);}
+.cta-option-icon{font-size:19px;flex-shrink:0;}
+.cta-option-label{font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--mint);margin-bottom:2px;}
+.cta-option.wa-option .cta-option-label{color:var(--wa);}
+.cta-option-val{font-size:14px;font-weight:600;color:rgba(255,255,255,.9);}
+
+/* Form */
+.cta-form{
+  background:rgba(13,22,19,0.7);
+  border:1px solid var(--border2);
+  border-radius:20px;padding:32px;
+  box-shadow:0 16px 48px rgba(0,0,0,0.25);
+  backdrop-filter:blur(12px);
+}
+.form-title{font-size:19px;font-weight:700;margin-bottom:5px;}
+.form-sub{font-size:13.5px;color:rgba(255,255,255,.38);margin-bottom:24px;}
+.fg{margin-bottom:12px;}
+.fg label{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.15em;color:rgba(123,193,169,.65);text-transform:uppercase;margin-bottom:6px;}
+.fg input,.fg select{
+  width:100%;background:rgba(255,255,255,.055);
+  border:1px solid var(--border);border-radius:10px;
+  padding:12px 15px;color:white;
+  font-family:var(--font);font-size:14.5px;outline:none;
+  transition:border-color .2s,background .2s;
+}
+.fg input:focus,.fg select:focus{border-color:rgba(123,193,169,.5);background:rgba(255,255,255,.07);}
+.fg input::placeholder{color:rgba(255,255,255,.18);}
+.fg select{appearance:none;cursor:pointer;}.fg select option{background:var(--ink2);}
+.fg-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.form-cta{margin-top:18px;}
+.form-note{font-size:11.5px;color:rgba(255,255,255,.24);margin-top:9px;text-align:center;}
+
+/* ── FOOTER ── */
+.footer{
+  padding:32px 48px;border-top:1px solid var(--border);
+  display:flex;justify-content:space-between;align-items:center;
+}
+.footer-logo{display:flex;align-items:center;gap:5px;font-size:15px;letter-spacing:-.02em;}
+.footer-logo b{font-weight:800;}
+.footer-logo span{font-weight:400;letter-spacing:.06em;}
+.footer-copy{font-family:var(--mono);font-size:10.5px;color:rgba(255,255,255,.24);letter-spacing:.08em;}
+.footer-links{display:flex;gap:22px;}
+.footer-links a{font-size:13px;color:rgba(255,255,255,.3);transition:color .15s;}.footer-links a:hover{color:var(--white);}
+
+/* ── FLOATING WA ── */
+.float-wa{
+  position:fixed;bottom:28px;right:28px;z-index:90;
+  width:52px;height:52px;border-radius:50%;
+  background:var(--wa);color:white;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 24px rgba(37,211,102,.35);
+  transition:transform .2s var(--ease),box-shadow .2s;
+  opacity:0;pointer-events:none;
+  transition:opacity .3s,transform .2s var(--ease),box-shadow .2s;
+}
+.float-wa.show{opacity:1;pointer-events:auto;}
+.float-wa:hover{transform:scale(1.08);box-shadow:0 8px 32px rgba(37,211,102,.5);}
+
+/* ── TOAST ── */
+.toast{
+  position:fixed;bottom:32px;left:50%;transform:translateX(-50%);
+  background:var(--mint);color:var(--ink);
+  padding:11px 22px;border-radius:999px;
+  font-size:13.5px;font-weight:700;z-index:9999;
+  opacity:0;transition:opacity .3s;pointer-events:none;white-space:nowrap;
+}
+.toast.show{opacity:1;}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.35;}}
+@keyframes shimmer{from{background-position:200% center;}to{background-position:-200% center;}}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1280px){.hero-visual{display:none;}.hero-h1{max-width:100%;}}
+@media(max-width:860px){
+  .nav{padding:14px 20px;}.nav.scrolled{padding:11px 20px;}
+  .btn-wa-nav{display:none;}
+  .hero{padding:96px 20px 56px;min-height:auto;}
+  .hero-h1{font-size:clamp(46px,11vw,80px);}
+  .hero-sub{font-size:15px;}
+  .hero-ctas{gap:10px;}
+  .hero-ctas .btn-primary,.hero-ctas .btn-wa-big{padding:13px 22px;font-size:14px;}
+  .problema{padding:72px 20px;}.problema-grid{grid-template-columns:1fr;gap:40px;}
+  .solucion{padding:72px 20px;}.serv-grid{grid-template-columns:1fr;gap:12px;}
+  .como{padding:72px 20px;}.steps{grid-template-columns:1fr;gap:44px;}.steps::before{display:none;}.step{padding-right:0;}
+  .resultados{padding:72px 20px;}.cases-grid{grid-template-columns:1fr;}
+  .cta-final{padding:72px 20px;}.cta-grid{grid-template-columns:1fr;gap:40px;}
+  .dash-body{grid-template-columns:1fr 1fr;}.dash-metric:nth-child(2){border-right:none;}
+  .fg-row{grid-template-columns:1fr;}
+  .footer{flex-direction:column;gap:18px;text-align:center;padding:28px 20px;}.footer-links{flex-wrap:wrap;justify-content:center;}
+  .proof-item{font-size:11px;}.float-wa{bottom:20px;right:20px;width:48px;height:48px;}
+  .cta-option{padding:13px 16px;}
+}
+</style>
+</head>
+<body>
+
+<!-- ── FLOATING WA ── -->
+<a href="https://wa.me/16470000000" target="_blank" class="float-wa" id="floatWa" aria-label="WhatsApp">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+</a>
+
+<!-- ── NAV ── -->
+<nav class="nav" id="nav">
+  <div class="nav-logo">
+    <svg width="22" height="22" viewBox="0 0 64 64" style="color:white;flex-shrink:0"><g stroke="currentColor" stroke-width="4.5" stroke-linecap="round" fill="none"><line x1="32" y1="14" x2="32" y2="50"></line><line x1="32" y1="32" x2="48" y2="20"></line><line x1="32" y1="32" x2="16" y2="44"></line></g><circle cx="32" cy="12" r="5.5" fill="currentColor"></circle><circle cx="32" cy="32" r="4.5" fill="currentColor"></circle><circle cx="32" cy="52" r="5.5" fill="currentColor"></circle><circle cx="48" cy="20" r="3.2" fill="currentColor"></circle><circle cx="16" cy="44" r="3.2" fill="currentColor"></circle></svg>
+    <div><span>Indelible</span><b>Ads</b></div>
+  </div>
+  <div class="nav-right">
+    <div class="nav-links" style="display:flex;align-items:center;gap:4px;margin-right:8px;">
+      <a href="https://indelible-8tg.pages.dev/#solucion" style="font-size:12px;color:rgba(255,255,255,.45);padding:5px 10px;border-radius:6px;transition:color .15s;font-family:var(--mono);letter-spacing:.06em;" onmouseover="this.style.color=&#39;rgba(255,255,255,.85)&#39;" onmouseout="this.style.color=&#39;rgba(255,255,255,.45)&#39;">Solución</a>
+      <a href="https://indelible-8tg.pages.dev/#proceso" style="font-size:12px;color:rgba(255,255,255,.45);padding:5px 10px;border-radius:6px;transition:color .15s;font-family:var(--mono);letter-spacing:.06em;" onmouseover="this.style.color=&#39;rgba(255,255,255,.85)&#39;" onmouseout="this.style.color=&#39;rgba(255,255,255,.45)&#39;">Proceso</a>
+      <a href="https://indelible-8tg.pages.dev/#resultados" style="font-size:12px;color:rgba(255,255,255,.45);padding:5px 10px;border-radius:6px;transition:color .15s;font-family:var(--mono);letter-spacing:.06em;" onmouseover="this.style.color=&#39;rgba(255,255,255,.85)&#39;" onmouseout="this.style.color=&#39;rgba(255,255,255,.45)&#39;">Resultados</a>
+      <a href="https://indelible-8tg.pages.dev/#contact" style="font-size:12px;color:rgba(255,255,255,.45);padding:5px 10px;border-radius:6px;transition:color .15s;font-family:var(--mono);letter-spacing:.06em;" onmouseover="this.style.color=&#39;rgba(255,255,255,.85)&#39;" onmouseout="this.style.color=&#39;rgba(255,255,255,.45)&#39;">Contacto</a>
+    </div>
+    <div class="lang-switcher">
+      <button class="lang-btn" onclick="setLang(&#39;en&#39;)" data-lang="en">EN</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn active" onclick="setLang(&#39;es&#39;)" data-lang="es">ES</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" onclick="setLang(&#39;fr&#39;)" data-lang="fr">FR</button>
+    </div>
+    <a href="https://wa.me/16470000000" target="_blank">
+      <button class="btn-wa-nav">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+        WhatsApp
+      </button>
+    </a>
+    <a href="https://indelible-8tg.pages.dev/#contact"><button class="btn-nav-cta">Agendar llamada →</button></a>
+  </div>
+</nav>
+
+<!-- ════ 1. HERO ════ -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-grid"></div>
+
+  <!-- Chat visual -->
+  <div class="hero-visual">
+    <div class="chat-card">
+      <div class="chat-header">
+        <div class="chat-avatar">
+          <svg width="16" height="16" viewBox="0 0 64 64" style="color:white"><g stroke="currentColor" stroke-width="4.5" stroke-linecap="round" fill="none"><line x1="32" y1="14" x2="32" y2="50"></line><line x1="32" y1="32" x2="48" y2="20"></line><line x1="32" y1="32" x2="16" y2="44"></line></g><circle cx="32" cy="12" r="5.5" fill="currentColor"></circle><circle cx="32" cy="32" r="4.5" fill="currentColor"></circle><circle cx="32" cy="52" r="5.5" fill="currentColor"></circle></svg>
+        </div>
+        <div>
+          <div class="chat-name">Sazón Restaurant</div>
+          <div class="chat-badge">en línea ahora</div>
+        </div>
+      </div>
+      <div class="chat-msgs">
+        <div class="msg in">¡Hola! ¿Tienen mesa para 4 el viernes a las 8pm?</div>
+        <div class="msg-time">8:42 pm</div>
+        <div class="msg out">¡Hola! Sí — tenemos lugar a las 8:00 y 8:30 pm. ¿Cuál te acomoda?</div>
+        <div class="msg in">Las 8pm perfecto, somos 4.</div>
+        <div class="msg out">Reserva confirmada ✓ — Viernes 8:00 pm · 4 personas. Recordatorio el jueves. ¡Nos vemos!</div>
+        <div class="msg-time right">8:42 pm · entregado</div>
+        <div class="chat-system">✓ Reserva guardada · ✓ Lead registrado · ✓ Recordatorio programado</div>
+      </div>
+    </div>
+    <div class="stats-bar">
+      <div class="stat-item"><div class="stat-n">100%</div><div class="stat-l">Tasa de respuesta</div></div>
+      <div class="stat-item"><div class="stat-n">&lt;30s</div><div class="stat-l">Tiempo de resp.</div></div>
+      <div class="stat-item"><div class="stat-n">24/7</div><div class="stat-l">Siempre activo</div></div>
+    </div>
+  </div>
+
+  <div class="hero-inner">
+    <div class="label hero-label">WhatsApp · Chatbots · Automatización Conversacional</div>
+    <h1 class="hero-h1">Automatiza<br>la operación.<br><em>No la<br>personalidad.</em></h1>
+    <p class="hero-sub">Construimos sistemas de WhatsApp y chatbots para negocios que quieren responder más rápido y cerrar más leads — sin sonar como todos los demás.</p>
+    <div class="hero-ctas">
+      <a href="https://indelible-8tg.pages.dev/#contact"><button class="btn-primary">Agendar llamada gratis →</button></a>
+      <a href="https://wa.me/16470000000" target="_blank">
+        <button class="btn-wa-big">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+          Escríbenos por WhatsApp
+        </button>
+      </a>
+    </div>
+    <div class="hero-proof">
+      <div class="proof-item"><div class="proof-dot"></div>+40 negocios automatizados</div>
+      <div class="proof-divider"></div>
+      <div class="proof-item"><div class="proof-dot"></div>Montreal · Guadalajara · USA</div>
+      <div class="proof-divider"></div>
+      <div class="proof-item"><div class="proof-dot"></div>WhatsApp · Web · Instagram</div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ 2. PROBLEM ════ -->
+<section class="problema">
+  <div class="problema-inner">
+    <div class="label reveal">El problema</div>
+    <div class="problema-grid">
+      <div>
+        <h2 class="problema-h2 reveal reveal-d1">Tu negocio pierde clientes mientras duermes.</h2>
+        <p class="problema-sub reveal reveal-d2">Y cuando respondes, la mayoría de los sistemas automatizados suenan tan robóticos que el cliente prefiere irse a otro lado.</p>
+        <div class="pain-list">
+          <div class="pain-item reveal reveal-d1"><span class="pain-icon">💬</span><span>Mensajes de WhatsApp sin respuesta en horas pico — clientes que no esperan.</span></div>
+          <div class="pain-item reveal reveal-d2"><span class="pain-icon">🥶</span><span>Leads que llegan, no reciben respuesta rápida y se enfrían antes de que alguien los llame.</span></div>
+          <div class="pain-item reveal reveal-d3"><span class="pain-icon">🔁</span><span>Seguimiento manual e inconsistente — cada vendedor hace lo que puede.</span></div>
+          <div class="pain-item reveal reveal-d4"><span class="pain-icon">🤖</span><span>Chatbots genéricos que suenan igual que todos los demás — y los clientes cierran de inmediato.</span></div>
+          <div class="pain-item reveal"><span class="pain-icon">😓</span><span>El dueño respondiendo WhatsApp a las 11pm porque no hay un sistema real.</span></div>
+        </div>
+      </div>
+      <div class="reveal reveal-d2">
+        <div class="ba-card">
+          <div class="ba-label before">Sin un sistema conversacional</div>
+          <div class="ba-msg before">"Gracias por contactarnos. Nuestro horario de atención es de lunes a viernes de 9am a 6pm. Por favor llame en ese horario o deje un mensaje."</div>
+          <div class="ba-divider"></div>
+          <div class="ba-label after">Con Indelible</div>
+          <div class="ba-msg after">"¡Hola! Claro que sí — ¿qué día tienes en mente y para cuántas personas? Tenemos buena disponibilidad esta semana."
+            <br><br><span style="font-size:12px;color:rgba(255,255,255,.35);font-style:italic;">18 segundos después del primer mensaje · 11:30pm</span>
+          </div>
+          <div class="ba-note">La diferencia no es solo la velocidad. Es que el segundo mensaje <strong>suena como una persona real</strong> — no como un sistema de tickets.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ 3. SOLUTION ════ -->
+<section class="solucion" id="solucion">
+  <div class="solucion-inner">
+    <div class="solucion-header">
+      <div class="label reveal" style="justify-content:center;">La solución</div>
+      <h2 class="solucion-h2 reveal reveal-d1">Sistemas conversacionales<br>que suenan como tu equipo.</h2>
+      <p class="solucion-sub reveal reveal-d2">No vendemos software. Construimos el sistema completo — flujos, voz, scripts y automatización — calibrado para tu negocio.</p>
+    </div>
+    <div class="serv-grid">
+      <div class="serv-card reveal">
+        <div class="serv-icon">💬</div>
+        <div class="serv-title">WhatsApp &amp; Chatbots</div>
+        <p class="serv-desc">Flujos de conversación que responden al instante, califican leads y confirman reservas — con tu voz, no desde un template genérico.</p>
+        <div class="serv-tags"><span class="serv-tag">WhatsApp Business</span><span class="serv-tag">Web Chatbot</span><span class="serv-tag">Instagram DM</span><span class="serv-tag">Voice Agent</span></div>
+      </div>
+      <div class="serv-card reveal reveal-d1">
+        <div class="serv-icon">🎯</div>
+        <div class="serv-title">Captación de Leads</div>
+        <p class="serv-desc">Atrae, califica y haz seguimiento automáticamente. Ningún lead se pierde. Cada prospecto recibe una respuesta real — en segundos.</p>
+        <div class="serv-tags"><span class="serv-tag">Funnels</span><span class="serv-tag">CRM</span><span class="serv-tag">Auto follow-up</span><span class="serv-tag">Meta Ads</span></div>
+      </div>
+      <div class="serv-card reveal reveal-d2">
+        <div class="serv-icon">🎙️</div>
+        <div class="serv-title">Branding Conversacional</div>
+        <p class="serv-desc">Diseñamos la personalidad de tu sistema: cómo saluda, maneja objeciones y cierra — para que suene a ti, no a todos los demás.</p>
+        <div class="serv-tags"><span class="serv-tag">Scripts</span><span class="serv-tag">Brand voice</span><span class="serv-tag">Conv. branding</span><span class="serv-tag">Copy</span></div>
+      </div>
+    </div>
+
+    <!-- Dashboard -->
+    <div class="dashboard reveal">
+      <div class="dash-topbar">
+        <div class="dash-dot" style="background:#ff5f57"></div>
+        <div class="dash-dot" style="background:#febc2e"></div>
+        <div class="dash-dot" style="background:#28c840"></div>
+        <span class="dash-title">Indelible Dashboard — Vista en tiempo real</span>
+      </div>
+      <div class="dash-body">
+        <div class="dash-metric"><div class="dash-metric-n">214</div><div class="dash-metric-l">Conversaciones / semana</div><div class="dash-metric-d">↑ +38% vs la semana anterior</div></div>
+        <div class="dash-metric"><div class="dash-metric-n">100%</div><div class="dash-metric-l">Tasa de respuesta</div><div class="dash-metric-d">Antes: 41% en horario laboral</div></div>
+        <div class="dash-metric"><div class="dash-metric-n">87</div><div class="dash-metric-l">Leads calificados</div><div class="dash-metric-d">↑ 19 llamadas agendadas</div></div>
+        <div class="dash-metric"><div class="dash-metric-n">&lt;28s</div><div class="dash-metric-l">Tiempo de respuesta</div><div class="dash-metric-d">Antes: 4–6 horas</div></div>
+      </div>
+      <div class="dash-footer">
+        <span class="dash-chip">● Activo 24/7</span>
+        <span class="dash-chip">✓ 0 mensajes sin respuesta</span>
+        <span class="dash-chip">✓ Suena como tu equipo</span>
+        <span class="dash-chip">↑ 3.2× más conversiones</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ 4. HOW IT WORKS ════ -->
+<section class="como" id="proceso">
+  <div class="como-inner">
+    <div class="como-header">
+      <div class="label reveal" style="justify-content:center;">Proceso</div>
+      <h2 class="como-h2 reveal reveal-d1">De cero a sistema activo<br>en menos de dos semanas.</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num">01</div>
+        <div class="step-title">Entendemos tu negocio</div>
+        <p class="step-desc">Antes de escribir un solo flujo, entendemos cómo habla tu equipo, quiénes son tus clientes y qué conversaciones se repiten más.</p>
+        <div class="step-detail">
+          <div class="step-item">Sesión de onboarding de 60 min</div>
+          <div class="step-item">Análisis de conversaciones reales</div>
+          <div class="step-item">Definición de voz de marca</div>
+        </div>
+      </div>
+      <div class="step reveal reveal-d1">
+        <div class="step-num">02</div>
+        <div class="step-title">Construimos el sistema</div>
+        <p class="step-desc">Diseñamos los flujos, escribimos los scripts y configuramos todo — personalizado para tu industria y tus clientes.</p>
+        <div class="step-detail">
+          <div class="step-item">Flujos de conversación a medida</div>
+          <div class="step-item">Scripts escritos con tu tono</div>
+          <div class="step-item">Integración con CRM y calendario</div>
+        </div>
+      </div>
+      <div class="step reveal reveal-d2">
+        <div class="step-num">03</div>
+        <div class="step-title">Activamos y calibramos</div>
+        <p class="step-desc">Activamos el sistema, monitoreamos las primeras conversaciones y ajustamos hasta que suene exactamente bien.</p>
+        <div class="step-detail">
+          <div class="step-item">Pruebas con casos reales</div>
+          <div class="step-item">Ajustes de voz y flujos</div>
+          <div class="step-item">Soporte y optimización continua</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ 5. RESULTS ════ -->
+<section class="resultados" id="resultados">
+  <div class="resultados-inner">
+    <div class="resultados-header reveal">
+      <div class="label">Resultados reales</div>
+      <h2 class="resultados-h2">Negocios que crecieron<br>sin perder su voz.</h2>
+      <p class="resultados-sub">Cada caso es un sistema a la medida. Aquí algunos resultados.</p>
+    </div>
+    <div class="cases-grid">
+      <div class="case-card reveal">
+        <div class="case-top">
+          <div class="case-sector">Restaurante · CDMX</div>
+          <div class="case-client">Sazón</div>
+          <p class="case-quote">"Antes respondíamos cuando podíamos. Ahora respondemos siempre — y sigue sonando como nosotros."</p>
+        </div>
+        <div class="case-problem"><div class="case-problem-label">El problema</div><div class="case-problem-text">Perdían reservas en horas pico. El equipo no podía manejar el volumen de WhatsApp. El dueño respondía a las 11pm.</div></div>
+        <div class="case-result"><div class="case-result-label">Lo que construimos</div><div class="case-result-text">Bot de WhatsApp que confirma reservas al instante, captura leads y envía recordatorios automáticos — con la voz de su equipo.</div></div>
+        <div class="case-stats">
+          <div><div class="case-stat-n">3.2×</div><div class="case-stat-l">más reservas</div></div>
+          <div><div class="case-stat-n">100%</div><div class="case-stat-l">tasa de respuesta</div></div>
+          <div><div class="case-stat-n">0</div><div class="case-stat-l">leads perdidos</div></div>
+        </div>
+      </div>
+      <div class="case-card reveal reveal-d1">
+        <div class="case-top">
+          <div class="case-sector">Salud · Guadalajara</div>
+          <div class="case-client">Clínica Aurora</div>
+          <p class="case-quote">"Los pacientes dicen que nos sentimos más cercanos — aunque ya no somos nosotros respondiendo."</p>
+        </div>
+        <div class="case-problem"><div class="case-problem-label">El problema</div><div class="case-problem-text">Recepcionistas saturadas con WhatsApp todo el día. Citas perdidas por falta de recordatorios y seguimiento.</div></div>
+        <div class="case-result"><div class="case-result-label">Lo que construimos</div><div class="case-result-text">Calificación de pacientes y agendamiento vía WhatsApp con recordatorios automáticos — con el tono cálido y profesional de la clínica.</div></div>
+        <div class="case-stats">
+          <div><div class="case-stat-n">+180</div><div class="case-stat-l">citas/mes</div></div>
+          <div><div class="case-stat-n">22%</div><div class="case-stat-l">menos ausencias</div></div>
+          <div><div class="case-stat-n">0</div><div class="case-stat-l">personal saturado</div></div>
+        </div>
+      </div>
+      <div class="case-card reveal reveal-d2">
+        <div class="case-top">
+          <div class="case-sector">Servicios B2B · Remoto</div>
+          <div class="case-client">Núcleo</div>
+          <p class="case-quote">"Antes tardábamos dos semanas en saber si un lead era serio. Ahora lo sabemos en la primera conversación."</p>
+        </div>
+        <div class="case-problem"><div class="case-problem-label">El problema</div><div class="case-problem-text">El equipo de ventas perdía horas en llamadas no calificadas. El CRM era un desastre y el seguimiento era manual e inconsistente.</div></div>
+        <div class="case-result"><div class="case-result-label">Lo que construimos</div><div class="case-result-text">Calificación conversacional de leads + CRM conectado a WhatsApp. El equipo solo habla con prospectos que ya saben lo que quieren.</div></div>
+        <div class="case-stats">
+          <div><div class="case-stat-n">5.6×</div><div class="case-stat-l">demos relevantes</div></div>
+          <div><div class="case-stat-n">-40%</div><div class="case-stat-l">ciclo de venta</div></div>
+          <div><div class="case-stat-n">0</div><div class="case-stat-l">leads sin seguimiento</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ 6. CTA ════ -->
+<section class="cta-final" id="contact">
+  <div class="cta-bg"></div>
+  <div class="cta-inner">
+    <div class="cta-grid">
+      <div class="cta-left reveal">
+        <div class="label">Hablemos</div>
+        <h2 class="cta-h2">¿Cuántas<br>conversaciones estás<br>perdiendo<br><em>ahora mismo?</em></h2>
+        <p class="cta-sub">Una llamada de 30 minutos es suficiente para entender si podemos ayudarte — y cómo. Sin pitch. Sin propuesta genérica.</p>
+        <div class="cta-options">
+          <a href="https://wa.me/16470000000" target="_blank" style="display:block">
+            <button class="cta-option wa-option" style="width:100%">
+              <span class="cta-option-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+              </span>
+              <div>
+                <div class="cta-option-label">Más rápido</div>
+                <div class="cta-option-val">Escríbenos por WhatsApp ahora</div>
+              </div>
+            </button>
+          </a>
+          <a href="https://calendly.com/indelibleads" target="_blank" style="display:block">
+            <button class="cta-option" style="width:100%">
+              <span class="cta-option-icon">📅</span>
+              <div><div class="cta-option-label">Agendar</div><div class="cta-option-val">Reservar llamada en Calendly — 30 min</div></div>
+            </button>
+          </a>
+          <a href="mailto:info@indelibleads.com" style="display:block">
+            <button class="cta-option" style="width:100%">
+              <span class="cta-option-icon">✉️</span>
+              <div><div class="cta-option-label">Email</div><div class="cta-option-val">info@indelibleads.com</div></div>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="cta-form reveal reveal-d1">
+        <div class="form-title">O déjanos tus datos</div>
+        <p class="form-sub">Te contactamos en menos de 24 horas.</p>
+        <form id="lead-form" action="https://formsubmit.co/info@indelibleads.com" method="POST" onsubmit="submitForm(event)">
+          <input type="hidden" name="_subject" value="Nuevo lead desde indelibleads.com/es">
+          <input type="hidden" name="_language" value="es">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none">
+          <div class="fg-row">
+            <div class="fg"><label>Nombre</label><input type="text" placeholder="Tu nombre" required=""></div>
+            <div class="fg"><label>Negocio</label><input type="text" placeholder="Tu marca" required=""></div>
+          </div>
+          <div class="fg"><label>WhatsApp / Teléfono</label><input type="tel" placeholder="+1 (000) 000-0000" required=""></div>
+          <div class="fg"><label>Email</label><input type="email" placeholder="tu@email.com"></div>
+          <div class="fg">
+            <label>¿Qué quieres automatizar?</label>
+            <select id="svc">
+              <option value="">Selecciona una opción</option>
+              <option>WhatsApp &amp; atención al cliente</option>
+              <option>Reservas y agendamiento</option>
+              <option>Generación de leads y seguimiento</option>
+              <option>Calificación de leads</option>
+              <option>Todo lo anterior</option>
+              <option>No sé por dónde empezar</option>
+            </select>
+          </div>
+          <div class="form-cta">
+            <button type="submit" class="btn-mint" style="width:100%;justify-content:center;">Enviar → te escribimos pronto</button>
+          </div>
+          <p class="form-note">Respondemos el mismo día en horario laboral · Sin spam · Sin compromiso</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="footer-logo">
+    <svg width="20" height="20" viewBox="0 0 64 64" style="color:white;flex-shrink:0"><g stroke="currentColor" stroke-width="4.5" stroke-linecap="round" fill="none"><line x1="32" y1="14" x2="32" y2="50"></line><line x1="32" y1="32" x2="48" y2="20"></line><line x1="32" y1="32" x2="16" y2="44"></line></g><circle cx="32" cy="12" r="5.5" fill="currentColor"></circle><circle cx="32" cy="32" r="4.5" fill="currentColor"></circle><circle cx="32" cy="52" r="5.5" fill="currentColor"></circle><circle cx="48" cy="20" r="3.2" fill="currentColor"></circle><circle cx="16" cy="44" r="3.2" fill="currentColor"></circle></svg>
+    <div><span>Indelible</span><b>Ads</b></div>
+  </div>
+  <p class="footer-copy">Canada · México · USA — © 2026</p>
+  <div class="footer-links">
+    <a href="https://wa.me/16470000000" target="_blank">WhatsApp</a>
+    <a href="mailto:info@indelibleads.com">Email</a>
+    <a href="https://calendly.com/indelibleads" target="_blank">Calendly</a>
+    <a href="https://indelible-8tg.pages.dev/privacidad" style="color:rgba(255,255,255,.2)">Privacidad</a>
+  </div>
+</footer>
+
+<div class="toast" id="toast">¡Enviado! Te contactamos pronto ✓</div>
+
+<script>
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); observer.unobserve(e.target); }});
+}, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Nav scroll state
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// Floating WA button
+const floatWa = document.getElementById('floatWa');
+window.addEventListener('scroll', () => {
+  floatWa.classList.toggle('show', window.scrollY > 600);
+});
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const t = document.querySelector(a.getAttribute('href'));
+    if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth'}); }
+  });
+});
+
+// Form
+
+function setLang(lang){
+  localStorage.setItem('indelible_lang', lang);
+  var paths = {en:'/', es:'/es/', fr:'/fr/'};
+  window.location.href = paths[lang];
+}
+
+function submitForm(e){
+  e.preventDefault();
+  const form = e.target;
+  const btn = form.querySelector('button[type="submit"]');
+  const originalText = btn.innerHTML;
+  btn.innerHTML = 'Enviando...';
+  btn.disabled = true;
+  fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  }).then(res => {
+    const t = document.getElementById('toast');
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 4000);
+    form.reset();
+  }).catch(() => {
+    alert('Hubo un error. Por favor escríbenos directamente a info@indelibleads.com');
+  }).finally(() => {
+    btn.innerHTML = originalText;
+    btn.disabled = false;
+  });
+}
+</script>
+
+
+</body></html>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://indelibleads.com/</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://indelibleads.com/es/</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://indelibleads.com/privacidad</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
