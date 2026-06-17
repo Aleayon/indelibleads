@@ -947,13 +947,9 @@ function submitForm(e){
     body: new FormData(form),
     headers: { 'Accept': 'application/json' }
   }).then(res => {
-    const t = document.getElementById('toast');
-    t.classList.add('show');
-    setTimeout(() => t.classList.remove('show'), 4000);
-    form.reset();
+    window.location.href = '/gracias';
   }).catch(() => {
     alert('Hubo un error. Por favor escríbenos directamente a info@indelibleads.com');
-  }).finally(() => {
     btn.innerHTML = originalText;
     btn.disabled = false;
   });
